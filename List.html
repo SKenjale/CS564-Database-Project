@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>See All Hotels</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<style>
+    body {
+      background-image: url('Background.jpg');
+      background-repeat: no-repeat;
+      background-size: 1400px;
+    }
+</style>
+
+<body>
+    <div class = "container vh-100">
+       <div class = "row justify-content-center h-100">
+        <div class = "card w-25 my-auto shadow">
+            <div class = "card-header text-center"> 
+                <h2>Get a list of All Hotels</h2>
+            </div>
+            <div class = "body">
+                <form action="list.php" method="post">
+                  <div class="form-group">
+                     <label for="address">Enter a preffered address or leave blank</label>
+                     <input type="address" id="address" class="form-control" name="address"/>
+                  </div>
+                  <input type="submit" class="btn btn-primary w-100" value="search" name="">
+                </form>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

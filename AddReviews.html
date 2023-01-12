@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Reviews</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<style>
+  body {
+    background-image: url('Background.jpg');
+    background-repeat: no-repeat;
+    background-size: 1400px;
+  }
+</style>
+<body>
+    <div class = "container vh-100">
+       <div class = "row justify-content-center h-100">
+        <div class = "card w-25 my-auto shadow">
+            <div class = "card-header text-center"> 
+                <h2>Add Reviews</h2>
+            </div>
+            <div class = "body">
+                <form action="reviewAdd.php" method="post">
+
+                  <div class="form-group">
+                     <label for="hotelName">Hotel Name</label>
+                     <input type="hotelName" id="hotelName" class="form-control" name="hotelName"/>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="pos">Positive Review (If no positive review, enter No Positive)</label>
+                    <input type="pos" id="pos" class="form-control" name="pos"/>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="neg">Negative Review (If no negative review, enter No Negative)</label>
+                    <input type="neg" id="neg" class="form-control" name="neg"/>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="score">Score out of 10</label>
+                    <input type="score" id="score" class="form-control" name="score"/>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="neg">Nationality</label>
+                    <input type="nat" id="nat" class="form-control" name="nat"/>
+                  </div>
+
+                  <input type="submit" class="btn btn-primary w-100" value="add" name="">
+                </form>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

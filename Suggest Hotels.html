@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suggest Hotels</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<style>
+    body {
+      background-image: url('Background.jpg');
+      background-repeat: no-repeat;
+      background-size: 1400px;
+    }
+</style>
+<body>
+    <div class = "container vh-100">
+       <div class = "row justify-content-center h-100">
+        <div class = "card w-25 my-auto shadow">
+            <div class = "card-header text-center"> 
+                <h2>Suggest Hotels</h2>
+            </div>
+            <div class = "body">
+                <form action="suggest.php" method="post">
+                  <div class="form-group">
+                     <label for="Nationality">Enter your Nationality</label>
+                     <input type="nat" id="nat" class="form-control" name="nat"/>
+                  </div>
+                  <input type="submit" class="btn btn-primary w-100" value="see sorted data" name="">
+                </form>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

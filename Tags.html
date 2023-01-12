@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Hotels</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<style>
+    body {
+      background-image: url('Background.jpg');
+      background-repeat: no-repeat;
+      background-size: 1400px;
+    }
+</style>
+
+<body>
+    <div class = "container vh-100">
+       <div class = "row justify-content-center h-100">
+        <div class = "card w-25 my-auto shadow">
+            <div class = "card-header text-center"> 
+                <h2>Search Tags</h2>
+            </div>
+            <div class = "body">
+                <form action="tag.php" method="post">
+                  <div class="form-group">
+                     <label for="hotelName">Enter the Hotel Name</label>
+                     <input type="hotelName" id="hotelName" class="form-control" name="hotelName"/>
+                  </div>
+                  <input type="submit" class="btn btn-primary w-100" value="search" name="">
+                </form>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

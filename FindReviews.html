@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Reviews</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<style>
+    body {
+      background-image: url('Background.jpg');
+      background-repeat: no-repeat;
+      background-size: 1400px;
+    }
+</style>
+
+<body>
+    <div class = "container vh-100">
+       <div class = "row justify-content-center h-100">
+        <div class = "card w-25 my-auto shadow">
+            <div class = "card-header text-center"> 
+                <h2>Search Reviews</h2>
+            </div>
+            <div class = "body">
+                <form action="review.php" method="post">
+                  <div class="form-group">
+                     <label for="hotelName">Hotel Name</label>
+                     <input type="hotelName" id="hotelName" class="form-control" name="hotelName"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="pos">Type of Review (Enter Positive, Negative or All)</label>
+                    <input type="pos" id="pos" class="form-control" name="pos"/>
+                  </div>
+                  <input type="submit" class="btn btn-primary w-100" value="search" name="">
+                </form>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>
